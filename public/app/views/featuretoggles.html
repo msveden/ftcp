@@ -1,0 +1,16 @@
+<div>
+	<div>
+		<label><input type="checkbox" data-ng-model="showActive">Show active</label>
+	</div>
+	<div>
+		<label><input type="checkbox" data-ng-model="showInactive"  checked>Show inactive</label>
+	</div>
+</div>
+<ul>
+  <li ng-repeat="ft in featureToggles | filter:showFilter">
+    {{ft._id}} KillSwitch? {{ft.Killswitch}} <button data-ng-click="pull(ft)">{{ toggleButtonText(ft) }}</button>
+  </li>
+  <!-- <li ng-repeat="ft in featureToggles | filter:{ Killswitch: false }:true">
+    {{ft._id}} KillSwitch? {{ft.Killswitch}} <button data-ng-click="pull(ft)">Pull</button>
+  </li> -->
+</ul>

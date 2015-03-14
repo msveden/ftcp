@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html data-ng-app="App">
+  <head>
+    <meta charset="utf-8" />
+    <title>[[ title ]]</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/bc/angular/angular.js"></script>
+    <script src="/bc/angular-moment/angular-moment.js"></script>
+    <script src="/bc/angular-resource/angular-resource.js"></script>
+    <script src="/bc/angular-route/angular-route.js"></script>
+    <script src="/bc/angular-moment/angular-moment.js"></script>
+    <script src="/bc/moment/moment.js"></script>
+    <script src="/bc/ng-lodash/build/ng-lodash.js"></script>
+    <script src="/app/app.js"></script>
+    <script src="/app/controllers/index-controller.js"></script>
+    <script src="/app/controllers/feature-toggle-controllers.js"></script>
+    <script src="/app/services/featureToggleService.js"></script>
+  </head>
+  <body>
+    <div data-ng-view></div>
+  </body>
+</html>
