@@ -20,6 +20,7 @@
                 redirectTo: '/featuretoggles'
             });
 
+            $locationProvider.html5Mode(true);
         }
     );
 

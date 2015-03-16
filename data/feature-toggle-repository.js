@@ -3,7 +3,7 @@ var dbConfig = require('../config/db_config');
 
 function getCollection() {
     var db = mongojs(dbConfig.connectionString);
-    return db.collection('FeatureToggles');
+    return db.collection('FeatureToggleData');
 }
 
 function handleResults(error, results, callback) {

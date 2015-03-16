@@ -30,7 +30,7 @@
             }
 
             init();
-            
+
         }]);
 
     module.controller('featureToggleDetailsCtrl',

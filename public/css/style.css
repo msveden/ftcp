@@ -6,3 +6,19 @@ body {
 a {
   color: #00B7FF;
 }
+
+.featureToggle {
+	background: green;
+	color: white;
+	margin-bottom: 0.5rem;
+	padding: 0.5rem;
+}
+
+.inactive {
+	background: red;
+	color: white;
+}
+
+.toggleButton {
+	float: right;
+}

@@ -7,10 +7,7 @@
 	</div>
 </div>
 <ul>
-  <li ng-repeat="ft in featureToggles | filter:showFilter">
-    {{ft._id}} KillSwitch? {{ft.Killswitch}} <button data-ng-click="pull(ft)">{{ toggleButtonText(ft) }}</button>
+  <li ng-repeat="ft in featureToggles | filter:showFilter" class="featureToggle" data-ng-class="{ 'inactive': ft.Killswitch }">
+    {{ft._id}} <button class="toggleButton" data-ng-click="pull(ft)">{{ toggleButtonText(ft) }}</button>
   </li>
-  <!-- <li ng-repeat="ft in featureToggles | filter:{ Killswitch: false }:true">
-    {{ft._id}} KillSwitch? {{ft.Killswitch}} <button data-ng-click="pull(ft)">Pull</button>
-  </li> -->
 </ul>
